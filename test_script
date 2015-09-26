@@ -1,0 +1,8 @@
+
+r = rnorm(1026)
+mat1 = matrix(r, nrow=3, ncol=3)
+temp = makeCacheMatrix(mat1)
+invMat<-cacheSolve(temp)
+mat1
+invMat
+mat1%*%invMat       
